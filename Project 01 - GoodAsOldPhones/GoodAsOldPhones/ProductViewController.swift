@@ -12,27 +12,25 @@
 import UIKit
 
 class ProductViewController: UIViewController {
+    
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    
+    var product: Product?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        productNameLabel.text = product?.name
+        
+        if let imageNamed = product?.fullscreenImageNamed {
+            productImageView.image = UIImage(named: imageNamed)
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func addToCartButtonDidTap(_ sender: Any) {
+        print("Add to cart successfully")
     }
-    */
-
+    
 }
