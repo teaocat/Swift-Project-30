@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nof-3N-6Dw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -126,11 +126,122 @@
                         <viewLayoutGuide key="safeArea" id="0Zx-qZ-Ekc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Us" id="PkB-Rw-Oav"/>
+                    <connections>
+                        <outlet property="scrollView" destination="M2H-Yi-nky" id="oeJ-7Z-cPf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cm-D5-h52" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="M2H-Yi-nky">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-contact" translatesAutoresizingMaskIntoConstraints="NO" id="YM3-qO-uMH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="125" id="tmh-s0-UAj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62T-ES-cgO">
+                            <rect key="frame" x="8" y="179" width="359" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="Xtx-ae-Bdd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZW-QI-P6w">
+                            <rect key="frame" x="73" y="228" width="228" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="R1I-wO-oGa"/>
+                            </constraints>
+                            <string key="text">Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaw-gz-9hV">
+                            <rect key="frame" x="73" y="354" width="228" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="zHC-Mo-uea"/>
+                            </constraints>
+                            <string key="text">Whether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected. </string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Hands-free phones available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ4-qI-qcr">
+                            <rect key="frame" x="73" y="491" width="228" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="uYf-8w-R4Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xob-bo-Gak">
+                            <rect key="frame" x="8" y="559" width="359" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="GOK-yN-EO4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-about-email" translatesAutoresizingMaskIntoConstraints="NO" id="JBN-UG-cm9">
+                            <rect key="frame" x="75" y="608" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-about-phone" translatesAutoresizingMaskIntoConstraints="NO" id="51U-d8-pCL">
+                            <rect key="frame" x="75" y="656" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-about-website" translatesAutoresizingMaskIntoConstraints="NO" id="faT-W9-4KE">
+                            <rect key="frame" x="75" y="704" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="good-as-old@example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbm-1k-lcm">
+                            <rect key="frame" x="132" y="614" width="168" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="412-888-9028" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7b-Om-sGZ">
+                            <rect key="frame" x="132" y="662" width="168" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdr-vX-1zr">
+                            <rect key="frame" x="132" y="710" width="168" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RF8-Ky-QHd" firstAttribute="trailing" secondItem="xob-bo-Gak" secondAttribute="trailing" constant="8" id="0Vb-hG-gQe"/>
+                        <constraint firstItem="YM3-qO-uMH" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" id="0mx-Uh-kpY"/>
+                        <constraint firstItem="UZW-QI-P6w" firstAttribute="top" secondItem="62T-ES-cgO" secondAttribute="bottom" constant="8" id="A4G-M8-iRK"/>
+                        <constraint firstItem="RF8-Ky-QHd" firstAttribute="trailing" secondItem="62T-ES-cgO" secondAttribute="trailing" constant="8" id="EkM-LD-1ke"/>
+                        <constraint firstItem="62T-ES-cgO" firstAttribute="top" secondItem="YM3-qO-uMH" secondAttribute="bottom" constant="54" id="Igb-Ql-kde"/>
+                        <constraint firstItem="xob-bo-Gak" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" constant="8" id="Jvm-eS-fKq"/>
+                        <constraint firstItem="RF8-Ky-QHd" firstAttribute="trailing" secondItem="Zaw-gz-9hV" secondAttribute="trailing" constant="74" id="Lf2-Sm-iuo"/>
+                        <constraint firstItem="62T-ES-cgO" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" constant="8" id="RG4-88-cCq"/>
+                        <constraint firstItem="Zaw-gz-9hV" firstAttribute="top" secondItem="62T-ES-cgO" secondAttribute="bottom" constant="134" id="Rg7-6x-mlm"/>
+                        <constraint firstItem="YM3-qO-uMH" firstAttribute="trailing" secondItem="RF8-Ky-QHd" secondAttribute="trailing" id="VMj-eT-4aL"/>
+                        <constraint firstItem="Zaw-gz-9hV" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" constant="73" id="b2U-bb-BMl"/>
+                        <constraint firstItem="RF8-Ky-QHd" firstAttribute="trailing" secondItem="UZW-QI-P6w" secondAttribute="trailing" constant="74" id="eUY-se-mK5"/>
+                        <constraint firstItem="JJ4-qI-qcr" firstAttribute="top" secondItem="UZW-QI-P6w" secondAttribute="bottom" constant="123" id="foq-xg-Mpy"/>
+                        <constraint firstItem="RF8-Ky-QHd" firstAttribute="trailing" secondItem="JJ4-qI-qcr" secondAttribute="trailing" constant="74" id="j4B-No-H6D"/>
+                        <constraint firstItem="UZW-QI-P6w" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" constant="73" id="kvP-hR-PF7"/>
+                        <constraint firstItem="xob-bo-Gak" firstAttribute="top" secondItem="JJ4-qI-qcr" secondAttribute="bottom" constant="30" id="rV7-GM-yGh"/>
+                        <constraint firstItem="YM3-qO-uMH" firstAttribute="top" secondItem="M2H-Yi-nky" secondAttribute="top" id="tTH-Vq-vmm"/>
+                        <constraint firstItem="JJ4-qI-qcr" firstAttribute="leading" secondItem="RF8-Ky-QHd" secondAttribute="leading" constant="73" id="zGo-7D-VBl"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="RF8-Ky-QHd"/>
                 </scrollView>
             </objects>
@@ -156,5 +267,9 @@
     </scenes>
     <resources>
         <image name="button-addtocart" width="158" height="41"/>
+        <image name="header-contact" width="375" height="125"/>
+        <image name="icon-about-email" width="34" height="34"/>
+        <image name="icon-about-phone" width="34" height="34"/>
+        <image name="icon-about-website" width="34" height="34"/>
     </resources>
 </document>
