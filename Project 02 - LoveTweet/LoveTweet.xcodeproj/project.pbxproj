@@ -12,6 +12,8 @@
 		4B504AA62000FFFA00BCC733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B504AA42000FFFA00BCC733 /* Main.storyboard */; };
 		4B504AA82000FFFA00BCC733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B504AA72000FFFA00BCC733 /* Assets.xcassets */; };
 		4B504AAB2000FFFA00BCC733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B504AA92000FFFA00BCC733 /* LaunchScreen.storyboard */; };
+		4BE38E4B200115230059051A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE38E4A200115230059051A /* Helper.swift */; };
+		4BE38E4D200117990059051A /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE38E4C200117990059051A /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4B504AA72000FFFA00BCC733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B504AAA2000FFFA00BCC733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B504AAC2000FFFA00BCC733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE38E4A200115230059051A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		4BE38E4C200117990059051A /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4B504AA02000FFFA00BCC733 /* AppDelegate.swift */,
 				4B504AA22000FFFA00BCC733 /* ViewController.swift */,
+				4BE38E4C200117990059051A /* Tweet.swift */,
+				4BE38E4A200115230059051A /* Helper.swift */,
 				4B504AA42000FFFA00BCC733 /* Main.storyboard */,
 				4B504AA72000FFFA00BCC733 /* Assets.xcassets */,
 				4B504AA92000FFFA00BCC733 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				4B504AA32000FFFA00BCC733 /* ViewController.swift in Sources */,
 				4B504AA12000FFFA00BCC733 /* AppDelegate.swift in Sources */,
+				4BE38E4B200115230059051A /* Helper.swift in Sources */,
+				4BE38E4D200117990059051A /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

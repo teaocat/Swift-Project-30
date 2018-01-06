@@ -68,7 +68,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jDF-d0-IPo">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jDF-d0-IPo">
                                 <rect key="frame" x="62" y="294" width="251" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="cuj-JN-MEq"/>
@@ -111,24 +111,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTt-zA-GLu">
                                 <rect key="frame" x="158" y="615" width="59" height="30"/>
                                 <state key="normal" title="Tweet it!"/>
+                                <connections>
+                                    <action selector="tweetItButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kO-z2-Ykl"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FQC-Fb-hja">
                                 <rect key="frame" x="36" y="509" width="303" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRW-y0-Dtp">
-                                        <rect key="frame" x="0.0" y="0.0" width="19.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qz7-6E-2L7">
-                                        <rect key="frame" x="39.5" y="0.0" width="263.5" height="30"/>
+                                        <rect key="frame" x="20" y="0.0" width="283" height="30"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="50" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-cz-l1J">
-                                                <rect key="frame" x="-2" y="0.0" width="220" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="277" height="31"/>
+                                                <connections>
+                                                    <action selector="salarySliderValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="7fu-rG-ZRI"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhP-Gh-2yQ">
-                                                <rect key="frame" x="226" y="0.0" width="37.5" height="30"/>
+                                                <rect key="frame" x="283" y="0.0" width="0.0" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -164,6 +170,14 @@
                             <constraint firstItem="FQC-Fb-hja" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="yOy-dQ-zeX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="jDF-d0-IPo" id="muk-DI-Jf9"/>
+                        <outlet property="genderSeg" destination="AMu-qO-jJ6" id="S5P-Bj-Z6r"/>
+                        <outlet property="nameTextField" destination="xoW-ns-BPJ" id="q8r-V6-ei4"/>
+                        <outlet property="salaryLabel" destination="OhP-Gh-2yQ" id="4Wf-YI-8Th"/>
+                        <outlet property="straightSwitch" destination="tfO-LL-zTp" id="xPK-x9-L3K"/>
+                        <outlet property="workTextField" destination="Xyz-b3-WMi" id="4e9-ZK-dgc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
