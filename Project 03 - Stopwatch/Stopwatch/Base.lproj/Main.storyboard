@@ -72,6 +72,9 @@
                                     <constraint firstAttribute="width" secondItem="alM-t5-gJh" secondAttribute="height" multiplier="1:1" id="dvq-i1-mW2"/>
                                 </constraints>
                                 <state key="normal" title="Lap"/>
+                                <connections>
+                                    <action selector="LapResetButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRq-lI-wQ7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYM-6h-hXQ">
                                 <rect key="frame" x="213" y="243" width="60" height="60"/>
@@ -82,10 +85,13 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlayPauseButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4m-wh-xGX"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-I5-Psc">
                                 <rect key="frame" x="0.0" y="358" width="375" height="309"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.96460121870040894" green="0.96476620435714722" blue="0.96459084749221802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lapCell" id="roi-d7-xvB">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -122,6 +128,7 @@
                                                 <constraint firstItem="uA8-0P-w56" firstAttribute="leading" secondItem="Kla-H6-FM3" secondAttribute="leadingMargin" id="hnn-OE-ALH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

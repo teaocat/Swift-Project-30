@@ -12,11 +12,11 @@
 import UIKit
 
 class Stopwatch: NSObject {
-    var count: Double
+    var counter: Double
     var timer: Timer
     
     override init() {
-        count = 0.0
+        counter = 0.0
         timer = Timer()
     }
     
