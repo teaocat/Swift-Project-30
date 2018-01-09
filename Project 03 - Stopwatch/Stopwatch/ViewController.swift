@@ -12,17 +12,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - Variable
+    fileprivate var mainStopwatch: Stopwatch = Stopwatch()
+    fileprivate var lapStopwatch: Stopwatch = Stopwatch()
+    fileprivate var isPlay: Bool = false
+    fileprivate var laps: [String] = []
+    
+    // MARK: - Outlets
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var lapTimerLabel: UILabel!
+    @IBOutlet weak var lapResetButton: UIButton!
+    @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var lapsTableView: UITableView!
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    // MARK: - UI Settings
 
 }
 
