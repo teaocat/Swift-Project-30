@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="-99.5" y="147.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Ii8-tc-1G1">
             <objects>
-                <viewController id="JSK-F7-Us4" sceneMemberID="viewController">
+                <viewController id="JSK-F7-Us4" customClass="DetailViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nwK-gA-uqG"/>
                         <viewControllerLayoutGuide type="bottom" id="OJB-sd-ayQ"/>
@@ -150,6 +150,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn2-jY-0Ni">
                                 <rect key="frame" x="170" y="513" width="35" height="30"/>
                                 <state key="normal" title="done"/>
+                                <connections>
+                                    <action selector="doneButtonDidClick:" destination="JSK-F7-Us4" eventType="touchUpInside" id="01B-8X-Aq4"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5W-TY-573">
                                 <rect key="frame" x="143" y="235" width="189.5" height="30"/>
@@ -184,6 +187,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hic-yi-lDL"/>
+                    <connections>
+                        <outlet property="childButton" destination="kbm-Lh-PEi" id="tHm-Q5-U7Q"/>
+                        <outlet property="phoneButton" destination="PHE-GD-49S" id="CaT-jH-1nn"/>
+                        <outlet property="shoppingButton" destination="Eob-gA-QGq" id="dNv-LR-Ivp"/>
+                        <outlet property="todoDatePicker" destination="Inh-UH-cw1" id="rku-h9-cT7"/>
+                        <outlet property="todoTitleLabel" destination="d5W-TY-573" id="W5h-Cw-tt0"/>
+                        <outlet property="travelButton" destination="pLJ-zf-ubV" id="c0S-vG-Xox"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhy-Ou-n0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
