@@ -13,6 +13,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var todoItem: TodoItem?
+    
+    // MARK: - Outlets
     @IBOutlet weak var childButton: UIButton!
     @IBOutlet weak var phoneButton: UIButton!
     @IBOutlet weak var shoppingButton: UIButton!
