@@ -57,13 +57,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4G-xA-e8h">
-                                                    <rect key="frame" x="105" y="50" width="229" height="21"/>
+                                                    <rect key="frame" x="85" y="50" width="249" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n81-pR-F3E">
-                                                    <rect key="frame" x="105" y="11" width="229" height="29"/>
+                                                    <rect key="frame" x="85" y="11" width="249" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -72,10 +72,10 @@
                                             <constraints>
                                                 <constraint firstItem="n81-pR-F3E" firstAttribute="top" secondItem="tei-kF-Wdn" secondAttribute="top" id="DKz-t1-dg2"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="tei-kF-Wdn" secondAttribute="bottom" constant="1" id="Giy-7Q-hN9"/>
-                                                <constraint firstItem="s4G-xA-e8h" firstAttribute="leading" secondItem="tei-kF-Wdn" secondAttribute="trailing" constant="30" id="HOU-Zl-jXE"/>
+                                                <constraint firstItem="s4G-xA-e8h" firstAttribute="leading" secondItem="tei-kF-Wdn" secondAttribute="trailing" constant="10" id="HOU-Zl-jXE"/>
                                                 <constraint firstItem="s4G-xA-e8h" firstAttribute="bottom" secondItem="tei-kF-Wdn" secondAttribute="bottom" id="MYS-HP-7Ka"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="s4G-xA-e8h" secondAttribute="trailing" id="N2k-9a-frx"/>
-                                                <constraint firstItem="n81-pR-F3E" firstAttribute="leading" secondItem="tei-kF-Wdn" secondAttribute="trailing" constant="30" id="SPO-kD-umE"/>
+                                                <constraint firstItem="n81-pR-F3E" firstAttribute="leading" secondItem="tei-kF-Wdn" secondAttribute="trailing" constant="10" id="SPO-kD-umE"/>
                                                 <constraint firstItem="tei-kF-Wdn" firstAttribute="top" secondItem="2mf-kY-sS5" secondAttribute="topMargin" id="VGA-r5-dov"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="n81-pR-F3E" secondAttribute="trailing" id="n8v-qy-GYW"/>
                                                 <constraint firstItem="tei-kF-Wdn" firstAttribute="leading" secondItem="2mf-kY-sS5" secondAttribute="leadingMargin" id="rDM-za-aII"/>
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="-99.5" y="147.5"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Edit Todo-->
         <scene sceneID="Ii8-tc-1G1">
             <objects>
                 <viewController id="JSK-F7-Us4" customClass="DetailViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,18 +133,34 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbm-Lh-PEi">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="child"/>
+                                        <state key="selected" backgroundImage="child-selected"/>
+                                        <connections>
+                                            <action selector="selectedChild:" destination="JSK-F7-Us4" eventType="touchUpInside" id="H7y-4R-pVR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHE-GD-49S">
                                         <rect key="frame" x="80" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="phone"/>
+                                        <state key="selected" backgroundImage="phone-selected"/>
+                                        <connections>
+                                            <action selector="selectedPhone:" destination="JSK-F7-Us4" eventType="touchUpInside" id="ZHr-cB-bhF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eob-gA-QGq">
                                         <rect key="frame" x="160" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="shopping-cart"/>
+                                        <state key="selected" backgroundImage="shopping-cart-selected"/>
+                                        <connections>
+                                            <action selector="selectedShopping:" destination="JSK-F7-Us4" eventType="touchUpInside" id="1sb-xT-gyZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-zf-ubV">
                                         <rect key="frame" x="240" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="travel"/>
+                                        <state key="selected" backgroundImage="travel-selected"/>
+                                        <connections>
+                                            <action selector="selectedTravel:" destination="JSK-F7-Us4" eventType="touchUpInside" id="YX7-sb-Afj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -193,13 +209,13 @@
                             <constraint firstItem="DI2-TI-GQG" firstAttribute="leading" secondItem="tPI-Tg-O1g" secondAttribute="leading" id="wxi-Ab-CxF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hic-yi-lDL"/>
+                    <navigationItem key="navigationItem" title="Edit Todo" id="hic-yi-lDL"/>
                     <connections>
                         <outlet property="childButton" destination="kbm-Lh-PEi" id="tHm-Q5-U7Q"/>
                         <outlet property="phoneButton" destination="PHE-GD-49S" id="CaT-jH-1nn"/>
                         <outlet property="shoppingButton" destination="Eob-gA-QGq" id="dNv-LR-Ivp"/>
                         <outlet property="todoDatePicker" destination="Inh-UH-cw1" id="rku-h9-cT7"/>
-                        <outlet property="todoTitleLabel" destination="d5W-TY-573" id="W5h-Cw-tt0"/>
+                        <outlet property="todoTitleField" destination="d5W-TY-573" id="W5h-Cw-tt0"/>
                         <outlet property="travelButton" destination="pLJ-zf-ubV" id="c0S-vG-Xox"/>
                     </connections>
                 </viewController>
@@ -210,9 +226,13 @@
     </scenes>
     <resources>
         <image name="child" width="50" height="50"/>
+        <image name="child-selected" width="50" height="50"/>
         <image name="phone" width="50" height="50"/>
+        <image name="phone-selected" width="50" height="50"/>
         <image name="shopping-cart" width="50" height="50"/>
+        <image name="shopping-cart-selected" width="50" height="50"/>
         <image name="travel" width="50" height="50"/>
+        <image name="travel-selected" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pjP-qd-MlS"/>
