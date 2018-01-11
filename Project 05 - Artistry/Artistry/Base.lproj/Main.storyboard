@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zVG-XF-1Sr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistCell" id="zVG-XF-1Sr" customClass="ArtistTableViewCell" customModule="Artistry" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="166"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zVG-XF-1Sr" id="XaD-Tc-zSZ">
@@ -62,6 +62,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="artistBioLabel" destination="Lyw-Mw-WGR" id="MzQ-Uj-eJy"/>
+                                            <outlet property="artistImageView" destination="Mgt-Ce-1Zv" id="o85-rR-lKa"/>
+                                            <outlet property="artistNameLabel" destination="8VL-Nd-srH" id="RCf-C6-qaw"/>
                                             <segue destination="VhM-lU-jKt" kind="push" id="Aej-uf-09b"/>
                                         </connections>
                                     </tableViewCell>
@@ -95,17 +98,17 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7Pt-jH-gRm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="workCell" id="7Pt-jH-gRm">
                                         <rect key="frame" x="0.0" y="28" width="375" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Pt-jH-gRm" id="yGV-QI-ynk">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Pt-jH-gRm" id="yGV-QI-ynk" customClass="WorkTableViewCell" customModule="Artistry" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="276.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Vv-Dh-6EC">
                                                     <rect key="frame" x="23" y="11" width="329" height="34"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-Au-cHY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-Au-cHY">
                                                     <rect key="frame" x="23" y="53" width="329" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -113,7 +116,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-AH-huG">
                                                     <rect key="frame" x="23" y="82" width="329" height="184"/>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,15 +125,20 @@
                                             <constraints>
                                                 <constraint firstItem="0Vv-Dh-6EC" firstAttribute="leading" secondItem="yGV-QI-ynk" secondAttribute="leadingMargin" constant="8" id="B7B-1u-0UV"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="0Vv-Dh-6EC" secondAttribute="trailing" constant="8" id="IFh-xP-5LY"/>
+                                                <constraint firstItem="bUk-AH-huG" firstAttribute="top" secondItem="ry1-Au-cHY" secondAttribute="bottom" constant="8" id="OW5-8H-0PE"/>
+                                                <constraint firstItem="ry1-Au-cHY" firstAttribute="leading" secondItem="yGV-QI-ynk" secondAttribute="leadingMargin" constant="8" id="Qdy-Ke-KFx"/>
                                                 <constraint firstItem="bUk-AH-huG" firstAttribute="leading" secondItem="yGV-QI-ynk" secondAttribute="leadingMargin" constant="8" id="Rgw-OZ-GJB"/>
-                                                <constraint firstItem="ry1-Au-cHY" firstAttribute="width" secondItem="0Vv-Dh-6EC" secondAttribute="width" id="WL2-Cj-dF2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ry1-Au-cHY" secondAttribute="trailing" constant="8" id="eQh-p6-hw0"/>
                                                 <constraint firstItem="0Vv-Dh-6EC" firstAttribute="top" secondItem="yGV-QI-ynk" secondAttribute="topMargin" id="kbF-2f-5uN"/>
-                                                <constraint firstItem="ry1-Au-cHY" firstAttribute="centerX" secondItem="yGV-QI-ynk" secondAttribute="centerX" id="onb-Ke-btV"/>
+                                                <constraint firstItem="ry1-Au-cHY" firstAttribute="top" secondItem="0Vv-Dh-6EC" secondAttribute="bottom" constant="8" id="sG5-wP-nni"/>
                                                 <constraint firstItem="bUk-AH-huG" firstAttribute="bottom" secondItem="yGV-QI-ynk" secondAttribute="bottomMargin" id="ssM-W1-CTl"/>
-                                                <constraint firstItem="bUk-AH-huG" firstAttribute="top" secondItem="ry1-Au-cHY" secondAttribute="bottom" constant="8" id="ubZ-fb-k5I"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bUk-AH-huG" secondAttribute="trailing" constant="8" id="vQy-1X-aGv"/>
-                                                <constraint firstItem="ry1-Au-cHY" firstAttribute="top" secondItem="0Vv-Dh-6EC" secondAttribute="bottom" constant="8" id="yaW-Ci-e2U"/>
                                             </constraints>
+                                            <connections>
+                                                <outlet property="workImageView" destination="0Vv-Dh-6EC" id="DdT-zy-oHJ"/>
+                                                <outlet property="workInfoLabel" destination="bUk-AH-huG" id="Q8Q-Sa-Gul"/>
+                                                <outlet property="workNameLabel" destination="ry1-Au-cHY" id="bGt-Ve-fFx"/>
+                                            </connections>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -158,6 +166,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lkx-Zr-xAu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bWm-86-3XV"/>
