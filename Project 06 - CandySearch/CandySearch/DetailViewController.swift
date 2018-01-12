@@ -12,27 +12,47 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    // MARK: - Outlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    // MARK: - Variable
+    var candy: Candy? {
+        // 属性观察器 didSet 在新的值被设置之后立即调用
+        didSet {
+            configureView()
+        }
+    }
+    
+    func configureView() {
+        if let candy = candy {
+            if let titleLabel = titleLabel, let imageView = imageView {
+                titleLabel.text = candy.name
+                imageView.image = UIImage(named: candy.name)
+                title = candy.category
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureView()
+    }
+    
+    /*
+     下意识我就这么写了......................
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let candy = candy else {
+            return
+        }
+        
+        title = candy.category
+        
+        titleLabel.text = candy.name
+        imageView.image = UIImage(named: candy.name)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     */
 }
