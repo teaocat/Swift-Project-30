@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4B08D14F2049190000715B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D14E2049190000715B5B /* AppDelegate.swift */; };
-		4B08D1512049190000715B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D1502049190000715B5B /* ViewController.swift */; };
+		4B08D1512049190000715B5B /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D1502049190000715B5B /* NewsTableViewController.swift */; };
 		4B08D1542049190000715B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B08D1522049190000715B5B /* Main.storyboard */; };
 		4B08D1562049190000715B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B08D1552049190000715B5B /* Assets.xcassets */; };
 		4B08D16120491A2B00715B5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B08D16020491A2B00715B5B /* LaunchScreen.xib */; };
 		4B08D16620496A4500715B5B /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D16520496A4500715B5B /* FeedParser.swift */; };
+		4B08D168204A7C0100715B5B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D167204A7C0100715B5B /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B08D14B2049190000715B5B /* SimpleRSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B08D14E2049190000715B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B08D1502049190000715B5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B08D1502049190000715B5B /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		4B08D1532049190000715B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B08D1552049190000715B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B08D15A2049190000715B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B08D16020491A2B00715B5B /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		4B08D16520496A4500715B5B /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		4B08D167204A7C0100715B5B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,7 @@
 		4B08D16320491B4D00715B5B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4B08D1502049190000715B5B /* ViewController.swift */,
+				4B08D1502049190000715B5B /* NewsTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -85,6 +87,7 @@
 		4B08D16420491B5500715B5B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B08D167204A7C0100715B5B /* NewsTableViewCell.swift */,
 				4B08D1522049190000715B5B /* Main.storyboard */,
 				4B08D16020491A2B00715B5B /* LaunchScreen.xib */,
 			);
@@ -164,7 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B08D16620496A4500715B5B /* FeedParser.swift in Sources */,
-				4B08D1512049190000715B5B /* ViewController.swift in Sources */,
+				4B08D1512049190000715B5B /* NewsTableViewController.swift in Sources */,
+				4B08D168204A7C0100715B5B /* NewsTableViewCell.swift in Sources */,
 				4B08D14F2049190000715B5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
